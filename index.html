@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advance Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js"></script>
+    <script>
+
+
+    </script>
+    </head>
+<body>
+    <form >
+    <table border="0" width="400px" cellspacing="5px" >
+    <tr>
+        <td height="30px" colspan="2"><h1 id="main-text">Sign UP Form</h1></td>
+        </tr>
+        
+        <tr>
+            <td>Firstname :</td><td></td>
+        </tr>
+        
+        <tr>
+            <td><select name="salut" id="salut" >
+                <option value="">---option---</option>
+                <option value="mr">Mr</option>
+                <option value="miss">Miss</option>
+                <option value="shree">Sree</option>
+                <option value="shreemati">Sreemati</option>
+                </select></td><td><p id="salutw">select firstname</p></td>
+        </tr>
+        
+        <tr>
+            <td>Lastname</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="lastname" id="lname" onclick="salutation()" onblur="usernameg()"/></td><td><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><p id="lnamew">enter lastname!</p></td>
+        </tr>
+     
+        <tr>
+            <td>Mobile no.</td>
+        </tr>
+        <tr>
+            <td><input type="number" name="number" id="mnumber" onclick=" salutation() ; lastnam()" onblur="validnum()" /></td>
+            <td><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><p id="mnumberw">enter number</p></td>
+        </tr>
+        <tr>
+            <td>Re-mobile no.</td></tr> 
+        <tr>
+            <td><input type="number" id="rmnumber" onclick="salutation() ; lastnam() ; mnumcheck()" oninput="remobile()" /></td>
+            <td><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><p id="rnumberw">Check number!</p></td></tr>
+        <tr>
+            <td>Email id</td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" id="email" onclick="salutation() ; lastnam() ; mnumcheck() ; mnumcheckr()" oninput="emailsugg()" />
+             <div id="poption">
+                 <span id="gmail" onclick="gmail()" >gmail.com</span>
+                 <span id="yahoo" onclick="yahoo()">yahoomail.com</span>
+                 <span id="hotmail" onclick="hotmail()">hotmail.com</span>
+                 <span id="outlook" onclick="outlook()">outlook.com</span>
+                </div>
+            </td>
+            <td><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><p id="emailw">invalid email</p></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="username" name="username" onclick="salutation() ; lastnam() ; mnumcheck() ; checkmail() ; mnumcheckr()" /></td>
+            <td><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><p id="usernamew">invalid username</p></td> 
+        </tr>
+        <tr><td>Password</td><td></td>
+        </tr>
+          <tr>
+            <td><input type="password" name="password" id="password" onclick="salutation() ; lastnam() ; mnumcheck() ; checkmail() ; mnumcheckr() ; checkusername(); passwarning(); passwordclick() " oninput="submitf(); passvalidd() " />
+             
+              
+              </td>
+              <td ><i class="fa fa-check" id="tick"></i><i class="fa fa-spinner fa-spin fa-3x fa-fw" id="scroll"></i><input type="checkbox" id="showpass" onclick="passtext()" /><span id="showpasst">Show Password</span><p id="passwordw"><span id="passwordc">A-</span><span id="passwords">a-</span><span id="passwordn">1</span></p></td> 
+        </tr>
+        <tr>
+            <td id="submittd"><input type="submit" value="Sign Up" disabled="disabled" id="submit" /></td>
+        </tr>
+    
+    </table>
+    </form>
+   <h4>hello man</h4>
+    </body>
+</html>
